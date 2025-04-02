@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,15 +10,20 @@ public class PlayerController : MonoBehaviour
     public PlayerInputControl m_playerInputControl;
     // 键盘或手柄输入方向
     public Vector2 m_inputDirection;
-    // 速度值
-    public float m_speed;
     // 刚体组件实例
     private Rigidbody2D m_rb;
 
+    [Header("基本参数")]
+    // 速度值
+    public float m_speed;
+    // 跳跃的力
+    public float m_jumpForce;
+
     private void Awake()
     {
-        m_playerInputControl = new PlayerInputControl();
         m_rb = GetComponent<Rigidbody2D>();
+        m_playerInputControl = new PlayerInputControl();
+        m_playerInputControl.Gameplay.Jump.started += Jump;
     }
 
     private void OnEnable()
@@ -52,10 +58,14 @@ public class PlayerController : MonoBehaviour
         {
             faceDir = 1;
         }
-        else if(m_inputDirection.x < 0)
-        { 
-            faceDir= -1;
+        else if (m_inputDirection.x < 0)
+        {
+            faceDir = -1;
         }
         transform.localScale = new Vector3(faceDir, transform.localScale.y, transform.localScale.z);
+    }
+    private void Jump(InputAction.CallbackContext context)
+    {
+        m_rb.AddForce(transform.up * m_jumpForce, ForceMode2D.Impulse);
     }
 }
