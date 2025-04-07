@@ -12784,7 +12784,7 @@ Tilemap:
       - {fileID: -1662995007, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: 574166765, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: 52423732, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
-      m_AnimationSpeed: 7.0000005
+      m_AnimationSpeed: 7
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 9, y: -16, z: 0}
@@ -12960,7 +12960,7 @@ Tilemap:
       - {fileID: 1905383195, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: -2012502373, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: -428413725, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
-      m_AnimationSpeed: 7
+      m_AnimationSpeed: 7.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 10, y: -11, z: 0}
@@ -13004,7 +13004,7 @@ Tilemap:
       - {fileID: -657933351, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: -1791502016, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: -2004477077, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
-      m_AnimationSpeed: 7.0000005
+      m_AnimationSpeed: 7
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 11, y: -10, z: 0}
@@ -13015,7 +13015,7 @@ Tilemap:
       - {fileID: -1662995007, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: 574166765, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: 52423732, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
-      m_AnimationSpeed: 7
+      m_AnimationSpeed: 7.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 9, y: -9, z: 0}
@@ -13367,7 +13367,7 @@ Tilemap:
       - {fileID: -657933351, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: -1791502016, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: -2004477077, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
-      m_AnimationSpeed: 7
+      m_AnimationSpeed: 7.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 11, y: 1, z: 0}
@@ -13444,7 +13444,7 @@ Tilemap:
       - {fileID: -1662995007, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: 574166765, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: 52423732, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
-      m_AnimationSpeed: 7
+      m_AnimationSpeed: 7.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 9, y: 4, z: 0}
@@ -13477,7 +13477,7 @@ Tilemap:
       - {fileID: -1662995007, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: 574166765, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: 52423732, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
-      m_AnimationSpeed: 7.0000005
+      m_AnimationSpeed: 7
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 9, y: 5, z: 0}
@@ -13653,7 +13653,7 @@ Tilemap:
       - {fileID: 1905383195, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: -2012502373, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
       - {fileID: -428413725, guid: 8f3531cf166a8e144b83a55f5cbfdb6b, type: 3}
-      m_AnimationSpeed: 7
+      m_AnimationSpeed: 7.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 10, y: 10, z: 0}
@@ -14160,9 +14160,10 @@ GameObject:
   - component: {fileID: 1818655872}
   - component: {fileID: 1818655874}
   - component: {fileID: 1818655875}
+  - component: {fileID: 1818655878}
   - component: {fileID: 1818655876}
   - component: {fileID: 1818655877}
-  - component: {fileID: 1818655878}
+  - component: {fileID: 1818655879}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -14211,7 +14212,7 @@ SpriteRenderer:
   m_SortingLayerID: -236165293
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1945773109, guid: 31eb40fd26f471940acd496342a512d4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ea110ae7bc328444be87d73050736ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14353,6 +14354,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1818655879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818655871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e82dfead00cf94f9e038bd07c2fe5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
