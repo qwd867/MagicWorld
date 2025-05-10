@@ -5,23 +5,23 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
-{    
+{
     // 物理检测器
     private PhysicsCheck m_physicsCheck;
-    
+
     // 玩家输入控制系统，InputSystem
     private PlayerInputControl m_playerInputControl;
-    
+
     // 键盘或手柄输入方向
     private Vector2 m_inputDirection;
-    
+
     // 刚体组件实例
     private Rigidbody2D m_rb;
 
     [Header("基本参数")]
     // 速度值
     public float m_speed;
-    
+
     // 跳跃的力
     public float m_jumpForce;
 
@@ -93,6 +93,7 @@ public class PlayerController : MonoBehaviour
         if (m_curJumpTimes > 0)
         {
             --m_curJumpTimes;
+            m_rb.velocity = new Vector2(m_inputDirection.x * m_speed * Time.deltaTime, 0);
             m_rb.AddForce(transform.up * m_jumpForce, ForceMode2D.Impulse);
         }
     }
